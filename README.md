@@ -20,5 +20,20 @@ for word in words:
     duplicates.remove(word) if word in duplicates else duplicates.append(word)
 
 print(duplicates[0])
+```
 
+## Swift
+```
+var words = [...]  // downloaded data from URL
+var duplicates:[String] = []
+
+for word in words {
+    if let index = find(duplicates, word) {
+        duplicates.removeAtIndex(index)
+    } else {
+        duplicates.append(word)
+    }
+}
+
+println(duplicates.first)
 ```
