@@ -1,11 +1,11 @@
-# Contains an array of words, all are duplicates except one, find the odd duck
+## Contains an array of words, all are duplicates except one, find the odd duck
 
 1. Get data by GETing it from https://api2.appspotr.com/givemeachallenge
 2. Find duplicates
 3. Output one unique word
 * It's significantly faster if data is pre downloaded and stored in variable :-)
 
-## Python
+#### Python
 
 ```python
 import urllib2
@@ -22,7 +22,7 @@ for word in words:
 print(duplicates[0])
 ```
 
-## Swift
+#### Swift
 ```swift
 var words = [...]  // downloaded data from URL
 var duplicates:[String] = []
