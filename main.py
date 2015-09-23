@@ -3,8 +3,8 @@ import json
 
 duplicates = []
 
-respons = urllib2.urlopen('https://api2.appspotr.com/givemeachallenge').read()
-words = json.loads(respons)['quiz']
+response = urllib2.urlopen('https://api2.appspotr.com/givemeachallenge').read()
+words = json.loads(response)['quiz']
 
 for word in words:
     duplicates.remove(word) if word in duplicates else duplicates.append(word)
