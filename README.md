@@ -7,7 +7,7 @@
 
 ## Python
 
-```
+```python
 import urllib2
 import json
 
@@ -23,7 +23,7 @@ print(duplicates[0])
 ```
 
 ## Swift
-```
+```swift
 var words = [...]  // downloaded data from URL
 var duplicates:[String] = []
 
